@@ -94,3 +94,14 @@ function openLinkedIn(){
 function openResume(){
 	window.open("https://drive.google.com/file/d/16AQbO6Fx9ddTdBO9cm3LLm_izZYE8FBk/view?usp=drive_link", "_blank");
 }
+
+const flavoursContainer = document.getElementById('flavoursContainer');
+const flavoursScrollWidth = flavoursContainer.scrollWidth;
+
+window.addEventListener('load', () => {
+  self.setInterval(() => {
+    if (flavoursContainer.scrollLeft !== flavoursScrollWidth) {
+      flavoursContainer.scrollTo(flavoursContainer.scrollLeft + 1, 0);
+    }
+  }, 5);
+});

@@ -92,6 +92,7 @@ h6 {
 	/* border-bottom:1px solid var(--borderColor); */
 	overflow: auto;
 	height: 100vh;
+	width: 100%;
 }
 
 .s2 {
@@ -128,15 +129,17 @@ h6 {
 .nav-item{
 	color: black;
 }
-.nav-item:hover{
-	color: white;
-}
 .greeting-wrapper1 {
 	display: grid;
 	text-align: center;
 	align-content: center;
 	min-height: 20em;
 	color: white;
+}
+
+.navbar-nav .nav-item:hover .nav-link:hover,
+.navbar-nav .nav-item:hover .nav-link:hover{
+    color: white;
 }
 
 .intro-wrapper {
@@ -157,7 +160,7 @@ h6 {
 	;
 }
 
-
+/* 
 .nav-wrapper {
 	border-radius: 5px 5px 0 0;
 	grid-area: nav-wrapper;
@@ -166,7 +169,7 @@ h6 {
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--mainColor);
-}
+} */
 
 #navigation a {
 	color: var(--mainText);
@@ -492,7 +495,7 @@ h6 {
 
 .items {
 	position: absolute;
-	left: 40%;
+	left: 30%;
 	justify-content: space-between;
 }
 
@@ -561,3 +564,18 @@ li {
 	padding-left: 30px;
 	cursor: pointer;
 }
+.technology{
+	height: 30vh;
+	/* width: 20vw; */
+}
+.container{
+	display: flex;
+	gap: 5%;
+	overflow: auto;
+	align-items: center;
+	padding-top: 20vh;
+	width: 100%;
+}
+.container::-webkit-scrollbar {
+	display: none;
+  }
